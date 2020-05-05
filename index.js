@@ -9,8 +9,7 @@ const app = express();
 //Conectar a db
 conectarDB();
 
-//CORS
-app.use(cors());
+
 // Configurar cabeceras y cors
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
